@@ -78,53 +78,95 @@ def twochain_multi_plot(filename, out, chainnames, paranames,fid, start, stop):
 	d1 = np.genfromtxt(filename[0])
 	d2 = np.genfromtxt(filename[1])
 	c = ChainConsumer()
-	c.add_chain(d1[100000:,start:stop],parameters=paranames, name =chainnames[0])
-	c.add_chain(d2[100000:,start:stop], name =chainnames[1])
+	c.add_chain(d1[300000:,start:stop],parameters=paranames, name =chainnames[0])
+	c.add_chain(d2[300000:,start:stop], name =chainnames[1])
 	c.configure(shade=[True,False],shade_alpha=[0.2,0.2],linestyles=["--", "-"],linewidths=[0.5,1.])	
 	fig = c.plotter.plot(truth=fid,filename="/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/plots/"+out)
 
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4"]
+# chainnames=[r"Scenario 1",r"Scenario 4"]
+# fid=[-1.,0.]
+# paranames=[r"$w_0$", r"$w_a$",]
+# twochain_single_plot(filename,"LSST_barytest_1vs4.pdf",chainnames,paranames,fid)
 
-filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_old"]
-chainnames=[r"LSST new",r"LSST old"]
-fid=[-1.,0.]
-paranames=[r"$w_0$", r"$w_a$",]
-twochain_single_plot(filename,"LSST_barytest.pdf",chainnames,paranames,fid)
-
-filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_old"]
-chainnames=[r"LSST new",r"LSST old"]
+filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4_noIAbary"]
+chainnames=[r"Scenario 0",r"Scenario 4"]
 fid=[0.3156,0.831,0.9645,-1.,0.,0.0491685,0.6727]
 paranames=[r"$Omega_m$", r"$\sigma_8$",r"$n_s$", r"$w_0$", r"$w_a$",r"$\Omega_b$", r"$h_0$"]
-twochain_multi_plot(filename,"LSST_barytest_cosmo.pdf",chainnames,paranames,fid,0,7)
+twochain_multi_plot(filename,"LSST_cosmo_0vs4.pdf",chainnames,paranames,fid,0,7)
 
-filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_old"]
-chainnames=[r"LSST new ",r"LSST old"]
-fid=[1.195074e+00, 1.298839e+00, 1.387089e+00, 1.471411e+00, 1.555770e+00, 1.643254e+00, 1.736070e+00, 1.837761e+00, 1.952242e+00, 2.085996e+00]
+filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4_noIAbary"]
+chainnames=[r"Scenario 0",r"Scenario 4"]
+fid=[1.208043e+00, 1.325018e+00, 1.420593e+00, 1.510205e+00, 1.598266e+00, 1.686821e+00, 1.778508e+00, 1.875286e+00, 1.979462e+00, 2.093743e+00]
 paranames=[r"$b_1$", r"$b_2$", r"$b_3$", r"$b_4$", r"$b_5$", r"$b_6$", r"$b_7$", r"$b_8$", r"$b_9$", r"$b_10$"]
-twochain_multi_plot(filename,"LSST_barytest_gbias.pdf",chainnames,paranames,fid,7,17)
+twochain_multi_plot(filename,"LSST_gbias_0vs4.pdf",chainnames,paranames,fid,7,17)
 
-filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_old"]
-chainnames=[r"LSST new",r"LSST old"]
+filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4_noIAbary"]
+chainnames=[r"Scenario 0",r"Scenario 4"]
 fid=[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0849973]
 paranames=[r"$sph_1$", r"$sph_2$", r"$sph_3$", r"$sph_4$", r"$sph_5$", r"$sph_6$", r"$sph_7$", r"$sph_8$", r"$sph_9$", r"$sph_10$",r"$\sigma_z source$"]
-twochain_multi_plot(filename,"LSST_barytest_sourcez.pdf",chainnames,paranames,fid,17,28)
+twochain_multi_plot(filename,"LSST_sourcez_0vs4.pdf",chainnames,paranames,fid,17,28)
 
-filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_old"]
-chainnames=[r"LSST new",r"LSST old"]
+filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4_noIAbary"]
+chainnames=[r"Scenario 0",r"Scenario 4"]
 fid=[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0849973*0.6]
 paranames=[r"$lph_1$", r"$lph_2$", r"$lph_3$", r"$lph_4$", r"$lph_5$", r"$lph_6$", r"$lph_7$", r"$lph_8$", r"$lph_9$", r"$lph_10$",r"$\sigma_z lens$"]
-twochain_multi_plot(filename,"LSST_barytest_lensz.pdf",chainnames,paranames,fid,28,39)
+twochain_multi_plot(filename,"LSST_lensz_0vs4.pdf",chainnames,paranames,fid,28,39)
 
-filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_old"]
-chainnames=[r"LSST new",r"LSST old"]
+ffilename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4_noIAbary"]
+chainnames=[r"Scenario 0",r"Scenario 4"]
 fid=[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
 paranames=[r"$m_1$", r"$m_2$", r"$m_3$", r"$m_4$", r"$m_5$", r"$m_6$", r"$m_7$", r"$m_8$", r"$m_9$", r"$m_10$"]
-twochain_multi_plot(filename,"LSST_barytest_shearcalib.pdf",chainnames,paranames,fid,39,49)
+twochain_multi_plot(filename,"LSST_shearcalib_0vs4.pdf",chainnames,paranames,fid,39,49)
 
-filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_old"]
-chainnames=[r"LSST new",r"LSST old"]
-fid=[5.92,1.1,-0.47,0.0,0.0,0.0]
-paranames=[r"$A_IA$",r"$beta$",r"$eta$",r"$eta_{high_z}$",r"$Q_1$",r"$Q_2$"]
-twochain_multi_plot(filename,"LSST_barytest_IA_Bary.pdf",chainnames,paranames,fid,49,55)
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_4"]
+# chainnames=[r"Scenario 1",r"Scenario 4"]
+# fid=[5.92,1.1,-0.47,0.0,0.0,0.0]
+# paranames=[r"$A_IA$",r"$beta$",r"$eta$",r"$eta_{high_z}$",r"$Q_1$",r"$Q_2$"]
+# twochain_multi_plot(filename,"LSST_barytest_IA_Bary_1vs5.pdf",chainnames,paranames,fid,49,55)
+
+
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_5"]
+# chainnames=[r"narrow MCMC prior",r"wide prior"]
+# fid=[-1.,0.]
+# paranames=[r"$w_0$", r"$w_a$",]
+# twochain_single_plot(filename,"LSST_barytest.pdf",chainnames,paranames,fid)
+
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_wide_prior"]
+# chainnames=[r"narrow MCMC prior",r"wide prior"]
+# fid=[0.3156,0.831,0.9645,-1.,0.,0.0491685,0.6727]
+# paranames=[r"$Omega_m$", r"$\sigma_8$",r"$n_s$", r"$w_0$", r"$w_a$",r"$\Omega_b$", r"$h_0$"]
+# twochain_multi_plot(filename,"LSST_barytest_cosmo.pdf",chainnames,paranames,fid,0,7)
+
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_wide_prior"]
+# chainnames=[r"narrow MCMC prior ",r"wide prior"]
+# fid=[1.195074e+00, 1.298839e+00, 1.387089e+00, 1.471411e+00, 1.555770e+00, 1.643254e+00, 1.736070e+00, 1.837761e+00, 1.952242e+00, 2.085996e+00]
+# paranames=[r"$b_1$", r"$b_2$", r"$b_3$", r"$b_4$", r"$b_5$", r"$b_6$", r"$b_7$", r"$b_8$", r"$b_9$", r"$b_10$"]
+# twochain_multi_plot(filename,"LSST_barytest_gbias.pdf",chainnames,paranames,fid,7,17)
+
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_wide_prior"]
+# chainnames=[r"narrow MCMC prior",r"wide prior"]
+# fid=[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0849973]
+# paranames=[r"$sph_1$", r"$sph_2$", r"$sph_3$", r"$sph_4$", r"$sph_5$", r"$sph_6$", r"$sph_7$", r"$sph_8$", r"$sph_9$", r"$sph_10$",r"$\sigma_z source$"]
+# twochain_multi_plot(filename,"LSST_barytest_sourcez.pdf",chainnames,paranames,fid,17,28)
+
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_wide_prior"]
+# chainnames=[r"narrow MCMC prior",r"wide prior"]
+# fid=[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0849973*0.6]
+# paranames=[r"$lph_1$", r"$lph_2$", r"$lph_3$", r"$lph_4$", r"$lph_5$", r"$lph_6$", r"$lph_7$", r"$lph_8$", r"$lph_9$", r"$lph_10$",r"$\sigma_z lens$"]
+# twochain_multi_plot(filename,"LSST_barytest_lensz.pdf",chainnames,paranames,fid,28,39)
+
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_wide_prior"]
+# chainnames=[r"narrow MCMC prior",r"wide prior"]
+# fid=[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+# paranames=[r"$m_1$", r"$m_2$", r"$m_3$", r"$m_4$", r"$m_5$", r"$m_6$", r"$m_7$", r"$m_8$", r"$m_9$", r"$m_10$"]
+# twochain_multi_plot(filename,"LSST_barytest_shearcalib.pdf",chainnames,paranames,fid,39,49)
+
+# filename=["/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0","/Users/timeifler/Dropbox/cosmolike_store/LSST_emu/like/like_LSST_3x2pt_sys_model_0_wide_prior"]
+# chainnames=[r"narrow MCMC prior",r"wide prior"]
+# fid=[5.92,1.1,-0.47,0.0,0.0,0.0]
+# paranames=[r"$A_IA$",r"$beta$",r"$eta$",r"$eta_{high_z}$",r"$Q_1$",r"$Q_2$"]
+# twochain_multi_plot(filename,"LSST_barytest_IA_Bary.pdf",chainnames,paranames,fid,49,55)
 
 
 

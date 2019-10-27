@@ -3,22 +3,21 @@ double data_read(int READ, int ci);
 double bary_read(int READ, int PC, int cj);
 void init_data_inv_bary(char *INV_FILE, char *DATA_FILE, char *BARY_FILE);
 void init_priors(double Prior1, double Prior2, double Prior3, double Prior4);
-void init_survey(char *surveyname);
+void init_survey(char *surveyname, double nsource, double nlens, double area);
 void init_galaxies(char *SOURCE_ZFILE, char *LENS_ZFILE, char *lensphotoz, char *sourcephotoz, char *galsample);
 void init_cosmo_runmode(char *runmode);
 void init_binning_fourier(int Ncl, double lmin, double lmax, double lmax_shear, double Rmin_bias, int Ntomo_source, int Ntomo_lens);
 void init_probes(char *probes);
 
-void set_lens_galaxies_LSST();
+
 void init_lens_sample(char *lensphotoz, char *galsample);
 void init_source_sample(char *sourcephotoz);
 
 void set_galaxies_source();
 void set_galaxies_lens();
+void set_lens_galaxies_LSST();
+void set_galaxies_SN10();
 
-void set_clusters_LSST(); //set parameters for LSST/WFIRST forecasts
-
-void init_clusterMobs();
 void set_equal_tomo_bins();
 void init_IA(char *model,char *lumfct);
 
@@ -127,7 +126,6 @@ double bary_read(int READ, int PC, int cj)
 }
 
 
-
 void init_cosmo_runmode(char *runmode)
 {
   printf("\n");
@@ -229,24 +227,25 @@ printf("---------------------------------------\n");
 printf("Photo-z priors Clustering\n");
 printf("Delta_z=%le, Sigma (Delta_z)=%le\n",prior.bias_zphot_clustering[0][0],prior.bias_zphot_clustering[0][1]);
 printf("Sigma_z=%le, Sigma (Sigma_z)=%le\n",prior.sigma_zphot_clustering[0][0],prior.sigma_zphot_clustering[0][1]);
-
 }
-
-
-
-
  
 
-void init_survey(char *surveyname)
+void init_survey(char *surveyname, double nsource, double nlens, double area)
 {
   printf("\n");
   printf("-------------------------------\n");
   printf("Initializing Survey Parameters\n");
   printf("-------------------------------\n");
+  
+  survey.area   = area;
+  survey.n_gal   = nsource;
+  survey.n_lens=nlens;
+  survey.sigma_e   = 0.37;
+  sprintf(survey.name,"%s",surveyname);
+  survey.area_conversion_factor = 60.0*60.0*constants.arcmin*constants.arcmin;
+  survey.n_gal_conversion_factor=1.0/constants.arcmin/constants.arcmin;
+  survey.m_lim=24.5;
 
-  if(strcmp(surveyname,"LSST")==0) set_survey_parameters_to_LSST();
-  if(strcmp(surveyname,"Euclid")==0) set_survey_parameters_to_Euclid();
-  if(strcmp(surveyname,"WFIRST")==0) set_survey_parameters_to_WFIRST();
   printf("Survey set to %s\n",survey.name);
   printf("Survey area: %le deg^2\n",survey.area);
   printf("Source Galaxy Density: %le galaxies/arcmin^2\n",survey.n_gal); 
@@ -409,13 +408,11 @@ void init_lens_sample(char *lensphotoz, char *galsample)
   }
   printf("Lens Sample Redshift Errors set to %s: redshift.clustering_photoz=%d\n",lensphotoz,redshift.clustering_photoz);
   
-  if (strcmp(survey.name,"LSST")==0 || strcmp(survey.name,"WFIRST")==0 || strcmp(survey.name,"HSC")==0 || strcmp(survey.name,"Euclid")==0 ){ 
-    if(strcmp(galsample,"source")==0){
-      set_galaxies_lens();
-    }
-    if(strcmp(galsample,"LSST_Y10")==0){
-      set_lens_galaxies_LSST();
-    }
+  if(strcmp(galsample,"WFIRST")==0){
+    set_galaxies_SN10();
+  }
+  if(strcmp(galsample,"LSST_Y10")==0){
+    set_lens_galaxies_LSST();
   }
   //call test_kmax once to initialize look-up tables at reference cosmology
   test_kmax(1000.,1);
@@ -533,6 +530,57 @@ void set_galaxies_lens()
   printf("%d GGL Powerspectra\n",tomo.ggl_Npowerspectra);
 }
 
+void set_galaxies_SN10()
+{
+  int k,j,n,i;
+  double frac, zi;
+  redshift.clustering_zdistrpar_zmin = 0.25;
+  redshift.clustering_zdistrpar_zmax = 4.0;
+  tomo.clustering_Npowerspectra=tomo.clustering_Nbin;
+  tomo.clustering_zmin[0] = redshift.clustering_zdistrpar_zmin;
+  tomo.clustering_zmax[tomo.clustering_Nbin-1] = redshift.clustering_zdistrpar_zmax;
+  pf_histo(zi, NULL);
+  int zbins =2000;
+  double da = (redshift.clustering_zdistrpar_zmax-redshift.clustering_zdistrpar_zmin)/(1.0*zbins);
+  double *sum;
+  sum=create_double_vector(0, zbins);
+  
+  sum[0] = 0.0;
+  for (k = 0, zi = redshift.clustering_zdistrpar_zmin; k<zbins; k++,zi+=da){
+    sum[k+1] = sum[k]+pf_histo(zi, NULL);
+  }
+  
+  printf("\n");
+  printf("Lens Sample - Tomographic Bin limits:\n");
+  for(k=0;k<tomo.clustering_Nbin-1;k++){
+    frac=(k+1.)/(1.*tomo.clustering_Nbin)*sum[zbins-1];
+    j = 0;
+    while (sum[j]< frac){
+      j++;
+    }
+    tomo.clustering_zmax[k] = redshift.clustering_zdistrpar_zmin+j*da;
+    tomo.clustering_zmin[k+1] = redshift.clustering_zdistrpar_zmin+j*da;
+    printf("min=%le max=%le\n",tomo.clustering_zmin[k],tomo.clustering_zmax[k]);
+  }
+  printf("min=%le max=%le\n",tomo.clustering_zmin[tomo.clustering_Nbin-1],tomo.clustering_zmax[tomo.clustering_Nbin-1]);
+  printf("redshift.clustering_zdistrpar_zmin=%le max=%le\n",redshift.clustering_zdistrpar_zmin,redshift.clustering_zdistrpar_zmax);
+  free_double_vector(sum,0,zbins);
+    gbias.b1_function = &b1_per_bin;
+  for (i =0; i < tomo.clustering_Nbin; i++){
+    gbias.b[i] = 1.3+0.1*i;
+    printf("Bin %d: galaxy bias=%le\n",i,gbias.b[i]);
+  }
+  n=0;
+  for (i = 0; i < tomo.clustering_Nbin; i++){
+    for(j = 0; j<tomo.shear_Nbin;j++){
+      n += test_zoverlap(i,j);
+      printf("GGL combinations zl=%d zs=%d accept=%d\n",i,j,test_zoverlap(i,j));
+    }
+  }
+  tomo.ggl_Npowerspectra = n;
+  printf("%d GGL Powerspectra\n",tomo.ggl_Npowerspectra);
+}
+
 void set_lens_galaxies_LSST()
 {
   int i,j,n,k;
@@ -570,7 +618,7 @@ void set_lens_galaxies_LSST()
     gbias.b1_function = &b1_per_bin;
   for (i =0; i < tomo.clustering_Nbin ; i++){
     gbias.b[i] = 0.95/(growfac(1./(1.+(tomo.clustering_zmax[i]+tomo.clustering_zmin[i]/2.)))/growfac(1.));
-    // gbias.b[i] = 1.3+0.1*i;
+    //gbias.b[i] = 1.3+0.1*i;
     printf("Bin %d: galaxy bias=%le\n",i,gbias.b[i]);
   }
   n=0;

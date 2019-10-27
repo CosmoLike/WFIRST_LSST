@@ -1,36 +1,24 @@
-./like_fourier 0
-./like_fourier 1
-./like_fourier 2
-./like_fourier 3
-./like_fourier 4
-./like_fourier 5
-./like_fourier 6
-./like_fourier 7
-./like_fourier 8
-./like_fourier 9
-./like_fourier 10
-./like_fourier 11
-./like_fourier 12
-./like_fourier 13
-./like_fourier 14
-./like_fourier 15
-./like_fourier 16
-./like_fourier 17
-./like_fourier 18
-./like_fourier 19
-./like_fourier 20
-./like_fourier 21
-./like_fourier 22
-./like_fourier 23
-./like_fourier 24
-./like_fourier 25
-./like_fourier 26
-./like_fourier 27
-./like_fourier 28
-./like_fourier 29
-./like_fourier 30
-./like_fourier 31
-./like_fourier 32
-./like_fourier 33
-./like_fourier 34
-./like_fourier 35
+./like_fourier 0 	dmo
+./like_fourier 1	dmo	
+./like_fourier 2	dmo	
+./like_fourier 0 	mb2
+./like_fourier 1	mb2	
+./like_fourier 2	mb2	
+./like_fourier 0 	illustris
+./like_fourier 1	illustris	
+./like_fourier 2	illustris	
+./like_fourier 0 	eagle
+./like_fourier 1	eagle	
+./like_fourier 2	eagle	
+./like_fourier 0 	TNG100
+./like_fourier 1	TNG100	
+./like_fourier 2	TNG100	
+./like_fourier 0 	HzAGN
+./like_fourier 1	HzAGN	
+./like_fourier 2	HzAGN	
+./like_fourier 0 	HzAGN
+./like_fourier 1	HzAGN	
+./like_fourier 2	HzAGN
+./like_fourier 0 	owls_AGN
+./like_fourier 1	owls_AGN	
+./like_fourier 2	owls_AGN		

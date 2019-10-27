@@ -567,7 +567,7 @@ void set_wlphotoz_LSST_Y10()
   printf("Source sample: LSST opti photoz uncertainty initialized\n");
   for (i=0;i<tomo.shear_Nbin; i++){
     nuisance.bias_zphot_shear[i]=0.0;
-    nuisance.sigma_zphot_shear[i]=0.02; 
+    nuisance.sigma_zphot_shear[i]=0.05; 
     printf("nuisance.bias_zphot_shear[%d]=%le\n",i,nuisance.bias_zphot_shear[i]);
     printf("nuisance.sigma_zphot_shear[%d]=%le\n",i,nuisance.sigma_zphot_shear[i]);
     // center of Gaussian priors
