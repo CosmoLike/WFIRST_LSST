@@ -514,19 +514,19 @@ void set_lens_galaxies_LSST()
 {
   int i,j,n,k;
   double frac, zi;
-  redshift.clustering_zdistrpar_zmin = 0.2;
-  redshift.clustering_zdistrpar_zmax = 1.2;
+  redshift.clustering_zdistrpar_zmin = 0.01;
+  redshift.clustering_zdistrpar_zmax = 1.5;
   tomo.clustering_Npowerspectra=tomo.clustering_Nbin;
-  tomo.clustering_zmin[0] = redshift.clustering_zdistrpar_zmin;
-  tomo.clustering_zmax[tomo.clustering_Nbin-1] = redshift.clustering_zdistrpar_zmax;
+  tomo.clustering_zmin[0] = 0.2;
+  tomo.clustering_zmax[tomo.clustering_Nbin-1] = 1.2;
 
   int zbins =2000;
-  double da = (redshift.clustering_zdistrpar_zmax-redshift.clustering_zdistrpar_zmin)/(1.0*zbins);
+  double da = (tomo.clustering_zmax[tomo.clustering_Nbin-1]-tomo.clustering_zmin[0])/(1.0*zbins);
   double *sum;
   sum=create_double_vector(0, zbins);
   
   sum[0] = 0.0;
-  for (k = 0, zi = redshift.clustering_zdistrpar_zmin; k<zbins; k++,zi+=da){
+  for (k = 0, zi = tomo.clustering_zmin[0]; k<zbins; k++,zi+=da){
     sum[k+1] = sum[k]+pf_histo(zi, NULL);
   }
   printf("\n");
@@ -537,8 +537,8 @@ void set_lens_galaxies_LSST()
     while (sum[j]< frac){
       j++;
     }
-    tomo.clustering_zmax[k] = redshift.clustering_zdistrpar_zmin+j*da;
-    tomo.clustering_zmin[k+1] = redshift.clustering_zdistrpar_zmin+j*da;
+    tomo.clustering_zmax[k] = tomo.clustering_zmin[0]+j*da;
+    tomo.clustering_zmin[k+1] = tomo.clustering_zmin[0]+j*da;
     printf("min=%le max=%le\n",tomo.clustering_zmin[k],tomo.clustering_zmax[k]);
   }
   printf("min=%le max=%le\n",tomo.clustering_zmin[tomo.clustering_Nbin-1],tomo.clustering_zmax[tomo.clustering_Nbin-1]);

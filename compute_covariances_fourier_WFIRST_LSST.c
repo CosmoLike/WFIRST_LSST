@@ -543,9 +543,9 @@ int main(int argc, char** argv)
   
   int N_scenarios=3;
   double area_table[3]={2000.0,18000.0,18000.0};
-  double nsource_table[3]={51.0,27.0,48.0};
+  double nsource_table[3]={51.0,27.0,43.0};
   
-  double nlens_table[3]={66.0,48.0,52.0};
+  double nlens_table[3]={66.0,48.0,50.0};
   
   char survey_designation[3][200]={"WFIRST","LSST_Y10","WFIRST"};
   char source_zfile[3][400]={"zdistri_WFIRST_LSST_lensing_fine_bin","SRD_zdistri_model_z0=1.100000e-01_beta=6.800000e-01_Y10_source.txt","zdistri_WFIRST_LSST_lensing_fine_bin"};

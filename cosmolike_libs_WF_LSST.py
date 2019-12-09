@@ -245,11 +245,11 @@ class InputNuisanceParams(IterableStruct):
     @classmethod
     def fiducial(cls):
         c = cls()
-        c.bias[:] = [1.208043e+00, 1.325018e+00, 1.420593e+00, 1.510205e+00, 1.598266e+00, 1.686821e+00, 1.778508e+00, 1.875286e+00, 1.979462e+00, 2.093743e+00]
+        c.bias[:] = [1.3,1.4,1.5,1.6,1.7,1.8,1.9,2.0,2.1,2.2]
         c.source_z_bias[:] = np.repeat(0.0, 10)
-        c.source_z_s = 0.08 # is being reset in main sampler routine
+        c.source_z_s = 0.01 # is being reset in main sampler routine
         c.lens_z_bias[:] = np.repeat(0.0, 10)
-        c.lens_z_s = 0.06 # is being reset in main sampler routine
+        c.lens_z_s = 0.01 # is being reset in main sampler routine
         c.shear_m[:] = np.repeat(0.0, 10)
         c.A_ia = 5.92
         c.beta_ia = 1.1
@@ -263,7 +263,7 @@ class InputNuisanceParams(IterableStruct):
     @classmethod
     def fiducial_sigma(cls):
         c = cls()
-        c.bias[:] = np.repeat(0.05, 10)
+        c.bias[:] = np.repeat(0.1, 10)
         c.source_z_bias[:] = np.repeat(0.01, 10)
         c.source_z_s = 0.002 # former 0.005
         c.lens_z_bias[:] = np.repeat(0.01, 10)
@@ -387,7 +387,8 @@ def sample_main(varied_parameters, sigma_z_shear,sigma_z_clustering, iterations,
 
     std = InputCosmologyParams.fiducial_sigma().convert_to_vector_filter(varied_parameters)
     std += InputNuisanceParams().fiducial_sigma().convert_to_vector_filter(varied_parameters)
-
+    
+    
     p0 = emcee.utils.sample_ball(starting_point, std, size=nwalker)
 
     ndim = len(starting_point)
@@ -401,9 +402,6 @@ def sample_main(varied_parameters, sigma_z_shear,sigma_z_clustering, iterations,
     #         pool.wait()
     #         sys.exit(0)
 
-    # test_datavector = filename+".test_datavector"
-    # print filename
-    # write_cosmolike_datavector(test_datavector, InputCosmologyParams.fiducial(),InputNuisanceParams.fiducial())
     
     sampler = emcee.EnsembleSampler(nwalker, ndim, likelihood,threads=nthreads,pool=pool)
 

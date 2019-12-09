@@ -19,7 +19,7 @@ lens_z=["zdistri_WFIRST_LSST_clustering_fine_bin","SRD_zdistri_model_z0=2.800000
 
 shear_prior=[0.002,0.003,0.002] 
 delta_z_prior_shear=[0.001,0.001,0.001]
-delta_z_prior_clustering=[0.002,0.001,0.002]
+delta_z_prior_clustering=[0.001,0.001,0.001]
 sigma_z_shear=[0.01,0.05,0.02]
 sigma_z_clustering=[0.01,0.03,0.02]
 sigma_z_prior_shear=[0.002,0.003,0.002]
@@ -67,5 +67,5 @@ initdatainv(cov_file ,data_file, bary_file)
 sample_params = sample_cosmology_2pt_nuisance_IA_bary_marg(get_N_tomo_shear(),get_N_tomo_clustering())
 #sample_params = sample_cosmology_2pt_cluster_nuisance(get_N_tomo_shear(),get_N_tomo_clustering()) 
 
-sample_main(sample_params,sigma_z_shear[model],sigma_z_clustering[model],2000,560,1,chain_file, blind=False, pool=MPIPool())
+sample_main(sample_params,sigma_z_shear[model],sigma_z_clustering[model],8000,1120,1,chain_file, blind=False, pool=MPIPool())
 

@@ -1,6 +1,17 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{The WFIRST mission [todo: Need someone to read and verify/smooth]}{}% 2
-\BOOKMARK [1][-]{section.3}{Simulating WFIRST observations}{}% 3
-\BOOKMARK [1][-]{section.4}{Combining LSST and WFIRST - Example for a joint weak lensing and galaxy clustering analysis}{}% 4
-\BOOKMARK [1][-]{section.5}{Synergies between WFIRST and LSST beyond 3x2 science}{}% 5
-\BOOKMARK [1][-]{section.6}{Conclusions}{}% 6
+\BOOKMARK [1][-]{section.2}{Multi-probe analysis basics - Combining Weak Lensing and Galaxy Clustering}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Forecasting Philosophy}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Modeling Details}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Covariance and Inference Details}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Simulating WFIRST and LSST surveys}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{LSST}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{WFIRST}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{WFIRST survey strategy variations}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Likelihood Analysis - Weak Lensing and Galaxy Clustering}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Building a 3x2pt data vector}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Systematics}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{Simulated likelihood analysis}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{WFIRST wide synergies beyond weak lensing and galaxy clustering}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{WFIRST wide synergies with CMB surveys}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 17

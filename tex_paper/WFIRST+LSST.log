@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 OCT 2019 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  28 NOV 2019 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -683,49 +683,55 @@ Package caption Info: threeparttable package is loaded.
 )
 (./journaldef.tex) (./WFIRST+LSST.aux
 
-LaTeX Warning: Label `tab:params' multiply defined.
+LaTeX Warning: Label `eq:nbar' multiply defined.
+
+
+LaTeX Warning: Label `eq:nbar' multiply defined.
+
+
+LaTeX Warning: Label `eq:qkappa' multiply defined.
 
 )
 \openout1 = `WFIRST+LSST.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 147.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 147
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 196.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 196
 .
  (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 147.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 147
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 196.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 196
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 147.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 147
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 196.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 196
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 147.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 147.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 196.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 196.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 147.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 196.
+LaTeX Font Info:    ... okay on input line 196.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 196.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
@@ -765,7 +771,7 @@ File: t1txr.fd 2000/12/15 v3.1
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 147.
+Package hyperref Info: Link coloring ON on input line 196.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -774,9 +780,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 147.
-LaTeX Info: Redefining \pageref on input line 147.
-LaTeX Info: Redefining \nameref on input line 147.
+LaTeX Info: Redefining \ref on input line 196.
+LaTeX Info: Redefining \pageref on input line 196.
+LaTeX Info: Redefining \nameref on input line 196.
 
 (./WFIRST+LSST.out) (./WFIRST+LSST.out)
 \@outlinefile=\write3
@@ -826,287 +832,326 @@ Package caption Warning: \caption will not be redefined since it's already
 See the caption package documentation for explanation.
 
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 153.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 202.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+eur on input line 153.
+LaTeX Font Info:    Try loading font information for U+eur on input line 202.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 153.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 202.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 153.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 202.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 202.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 202.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 153.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 202.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 202.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 153.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 202.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 153.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 202.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 184.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 184.
-
-
-Package natbib Warning: Citation `2019arXiv190205569A' on page 1 undefined on i
-nput line 188.
-
-
-Package natbib Warning: Citation `2009arXiv0912.0201L' on page 1 undefined on i
-nput line 191.
-
-
-Package natbib Warning: Citation `2016ApJ...816...11D' on page 1 undefined on i
-nput line 191.
-
-
-LaTeX Warning: Reference `fi:wfirstabilities' on page 1 undefined on input line
- 193.
-
-<plots/WFIRST_timeline.pdf, id=33, 488.27226pt x 592.31328pt>
-File: plots/WFIRST_timeline.pdf Graphic file (type pdf)
-<use plots/WFIRST_timeline.pdf>
-Package pdftex.def Info: plots/WFIRST_timeline.pdf  used on input line 199.
-(pdftex.def)             Requested size: 241.84842pt x 293.38126pt.
-
-Overfull \hbox (1.84842pt too wide) in paragraph at lines 199--200
-[][]
+Overfull \hbox (6.18689pt too wide) in paragraph at lines 202--202
+[][]  
  []
 
 
-Package natbib Warning: Citation `spergel15' on page 1 undefined on input line 
-200.
+Overfull \hbox (13.24245pt too wide) in paragraph at lines 202--202
+[][]  
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 202.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 202.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 207.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 207.
+
+Underfull \hbox (badness 1087) in paragraph at lines 206--208
+\T1/txr/m/n/10 We ex-plore syn-er-gies be-tween the space-based Wide-Field In-f
+rared Sur-vey Tele-scope
+ []
 
 
-Package natbib Warning: Citation `hirata13??' on page 1 undefined on input line
- 200.
+Overfull \hbox (13.41452pt too wide) in paragraph at lines 235--235
+$[]$ [][]$\OML/txmi/m/it/8 https \OT1/txr/m/n/8 : \OML/txmi/m/it/8 ==wfirst:gsf
+c:nasa:gov=science=WFIRSTScienceSheetFINAL:pdf$| 
+ []
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 274.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 274.
 
-Package natbib Warning: Citation `spergel15' on page 1 undefined on input line 
-200.
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 275.
 
-
-Package natbib Warning: Citation `hirata13??' on page 1 undefined on input line
- 200.
-
-
-Package natbib Warning: Citation `2015arXiv150303757S' on page 1 undefined on i
-nput line 208.
-
-
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 209.
-
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 209.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 275.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 209.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 275.
  [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
-Package natbib Warning: Citation `2015arXiv150303757S' on page 2 undefined on i
-nput line 210.
-
-
-Overfull \hbox (13.41452pt too wide) in paragraph at lines 221--221
-$[]$ [][]$\OML/txmi/m/it/8 https \OT1/txr/m/n/8 : \OML/txmi/m/it/8 ==wfirst:gsf
-c:nasa:gov=science=WFIRSTScienceSheetFINAL:pdf$| 
  []
-
-
-Overfull \hbox (8.99107pt too wide) in alignment at lines 236--250
-[] [] [] [] [] [] [] 
- []
-
-
-Package natbib Warning: Citation `2012arXiv1204.5151H' on page 2 undefined on i
-nput line 262.
-
-
-Package natbib Warning: Citation `hcm18' on page 2 undefined on input line 264.
-
-
-
-Package natbib Warning: Citation `Candels' on page 2 undefined on input line 26
-4.
-
-<plots/plot_magnitude_wband.pdf, id=57, 393.93704pt x 312.28448pt>
-File: plots/plot_magnitude_wband.pdf Graphic file (type pdf)
-<use plots/plot_magnitude_wband.pdf>
-Package pdftex.def Info: plots/plot_magnitude_wband.pdf  used on input line 269
-.
-(pdftex.def)             Requested size: 236.15796pt x 187.21489pt.
-<plots/plot_number_density_hband_and_wband.pdf, id=58, 384.88394pt x 312.28448p
-t>
-File: plots/plot_number_density_hband_and_wband.pdf Graphic file (type pdf)
-<use plots/plot_number_density_hband_and_wband.pdf>
-Package pdftex.def Info: plots/plot_number_density_hband_and_wband.pdf  used on
- input line 270.
-(pdftex.def)             Requested size: 230.46748pt x 186.9957pt.
-
-Package natbib Warning: Citation `DESC_SRD18' on page 2 undefined on input line
- 281.
-
-
-Package natbib Warning: Citation `kre17' on page 2 undefined on input line 283.
-
-
-
-Package natbib Warning: Citation `DESC_SRD18' on page 2 undefined on input line
- 283.
-
-
-Package natbib Warning: Citation `OSTF18' on page 2 undefined on input line 283
-.
-
-<plots/plot_number_density_with_LSST_redshift.pdf, id=63, 402.12802pt x 295.831
-97pt>
-File: plots/plot_number_density_with_LSST_redshift.pdf Graphic file (type pdf)
-<use plots/plot_number_density_with_LSST_redshift.pdf>
-Package pdftex.def Info: plots/plot_number_density_with_LSST_redshift.pdf  used
- on input line 286.
-(pdftex.def)             Requested size: 270.30118pt x 198.85188pt.
-<plots/WF_LSST_wp06.pdf, id=64, 421.84541pt x 425.38097pt>
-File: plots/WF_LSST_wp06.pdf Graphic file (type pdf)
-<use plots/WF_LSST_wp06.pdf>
-Package pdftex.def Info: plots/WF_LSST_wp06.pdf  used on input line 287.
-(pdftex.def)             Requested size: 199.16928pt x 200.83778pt.
-
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 339.
-
-[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.339 
-       <./plots/WFIRST_timeline.pdf>]
-
-Package natbib Warning: Citation `2019arXiv190108586S' on page 3 undefined on i
-nput line 342.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 349.
+LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 294.
 
-[3pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+[2pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.349 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2}) has been already used, duplicate ignored
+l.294 \subsection
+                 {Forecasting Philosophy}]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.349 
-       <./plots/plot_magnitude_wband.pdf> <./plots/plot_number_density_hband_an
-d_wband.pdf
+LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 347.
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/plot_number_density_
-hband_and_wband.pdf): PDF inclusion: multiple pdfs with page group included in 
-a single page
->]
+[3]
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 370.
 
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 358.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+<plots/zbins_LSST.pdf, id=224, 436.82384pt x 329.44592pt>
+File: plots/zbins_LSST.pdf Graphic file (type pdf)
+<use plots/zbins_LSST.pdf>
+Package pdftex.def Info: plots/zbins_LSST.pdf  used on input line 387.
+(pdftex.def)             Requested size: 230.46748pt x 173.81627pt.
 
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+
+LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 402.
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.358 \item {
-             \bf Trough cosmology:} Cosmic underdensities have emerged as a ...
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
- been already used, duplicate ignored
+l.402 \eea
+           <./plots/zbins_LSST.pdf>]
+<plots/zbins_WFIRST.pdf, id=296, 436.82384pt x 329.44592pt>
+File: plots/zbins_WFIRST.pdf Graphic file (type pdf)
+<use plots/zbins_WFIRST.pdf>
+Package pdftex.def Info: plots/zbins_WFIRST.pdf  used on input line 427.
+(pdftex.def)             Requested size: 230.46748pt x 173.81627pt.
+<plots/plot_magnitude_wband.pdf, id=307, 393.93704pt x 312.28448pt>
+File: plots/plot_magnitude_wband.pdf Graphic file (type pdf)
+<use plots/plot_magnitude_wband.pdf>
+Package pdftex.def Info: plots/plot_magnitude_wband.pdf  used on input line 452
+.
+(pdftex.def)             Requested size: 236.15796pt x 187.21489pt.
+
+
+LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 459.
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.358 \item {
-             \bf Trough cosmology:} Cosmic underdensities have emerged as a ...
- <./plots/plot_number_density_with_LSST_redshift.pdf> <./plots/WF_LSST_wp06.pdf
+l.459 F
+       igure \ref{fi:wbanddepth} shows the results when using the ETC to com...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.459 F
+       igure \ref{fi:wbanddepth} shows the results when using the ETC to com...
+ <./plots/zbins_WFIRST.pdf> <./plots/plot_magnitude_wband.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/WF_LSST_wp06.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/plot_magnitude_wband
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+[]\T1/txr/m/n/9 A 1.5 year WFIRST wide sur-vey would yield 45
+ []
 
-Package natbib Warning: Citation `Ade:2019kq' on page 5 undefined on input line
- 364.
+
+Underfull \hbox (badness 2310) in paragraph at lines 471--472
+\T1/txr/m/n/9 galaxies/arcmin$[]$ for the source sam-ple (cf Fig. [][]4[][]) an
+d 68
+ []
 
 
-Package natbib Warning: Citation `2017PhRvD..95l3512S' on page 5 undefined on i
-nput line 373.
+Underfull \vbox (badness 2326) has occurred while \output is active []
 
-No file WFIRST+LSST.bbl.
+<plots/plot_number_density_hband_and_wband.pdf, id=405, 384.88394pt x 312.28448
+pt>
+File: plots/plot_number_density_hband_and_wband.pdf Graphic file (type pdf)
+<use plots/plot_number_density_hband_and_wband.pdf>
+Package pdftex.def Info: plots/plot_number_density_hband_and_wband.pdf  used on
+ input line 477.
+(pdftex.def)             Requested size: 227.62204pt x 184.68939pt.
+<plots/plot_number_density_with_LSST_redshift.pdf, id=406, 402.12802pt x 295.83
+197pt>
+File: plots/plot_number_density_with_LSST_redshift.pdf Graphic file (type pdf)
+<use plots/plot_number_density_with_LSST_redshift.pdf>
+Package pdftex.def Info: plots/plot_number_density_with_LSST_redshift.pdf  used
+ on input line 483.
+(pdftex.def)             Requested size: 227.62204pt x 167.45232pt.
 
-Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
+LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 562.
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.562 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.562 
+       <./plots/plot_number_density_hband_and_wband.pdf> <./plots/plot_number_d
+ensity_with_LSST_redshift.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./plots/plot_number_density_
+with_LSST_redshift.pdf): PDF inclusion: multiple pdfs with page group included 
+in a single page
+>]
+Underfull \vbox (badness 1237) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 577.
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.577 
+      ]
+
+LaTeX Warning: Reference `lastpage' on page 8 undefined on input line 640.
+
+[8]
+<plots/plot_WF_LSST.pdf, id=571, 318.80981pt x 318.21623pt>
+File: plots/plot_WF_LSST.pdf Graphic file (type pdf)
+<use plots/plot_WF_LSST.pdf>
+Package pdftex.def Info: plots/plot_WF_LSST.pdf  used on input line 688.
+(pdftex.def)             Requested size: 227.62204pt x 227.20241pt.
+
+
+LaTeX Warning: Reference `fi:FoM' on page 9 undefined on input line 693.
+
+
+LaTeX Warning: Reference `lastpage' on page 9 undefined on input line 694.
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.694 
+       <./plots/plot_WF_LSST.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `lastpage' on page 10 undefined on input line 730.
+
+[10]
+
+LaTeX Warning: Reference `lastpage' on page 11 undefined on input line 763.
+
+[11] (./WFIRST+LSST.bbl
+
+Package hyperref Warning: Suppressing empty link on input line 176.
+
+
+Package hyperref Warning: Suppressing empty link on input line 198.
+
+
+Package hyperref Warning: Suppressing empty link on input line 249.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+[]\T1/txr/m/n/8 Laureijs R., et al., 2011, Eu-clid Def-i-ni-tion Study Re-port
+ []
+
+
+Package hyperref Warning: Suppressing empty link on input line 271.
+
+
+Package hyperref Warning: Suppressing empty link on input line 376.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
+[]\T1/txr/m/n/8 The LSST Dark En-ergy Sci-ence Col-lab-o-ra-tion et al., 2018,
+ []
+
+
+Package hyperref Warning: Suppressing empty link on input line 381.
+
+
+Underfull \vbox (badness 1983) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `lastpage' on page 12 undefined on input line 414.
+
+[12])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 775.
 - LAST -
-Extra skip:17.4319pt
-Left:496.60489pt/1.9485pt
-Right:481.0pt/0.12149pt
-Output:499.80244pt
+Extra skip:10.0pt
+Left:29.0pt/1.12799pt
+Right:19.0pt/1.12799pt
+Output:29.5pt
 
-LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 395.
 
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
+LaTeX Warning: Reference `lastpage' on page 13 undefined on input line 775.
+
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 775.
  (./WFIRST+LSST.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 395.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 775.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 775.
 Package rerunfilecheck Info: File `WFIRST+LSST.out' has not changed.
-(rerunfilecheck)             Checksum: B74635C65E1908033952013FB900518F;471.
+(rerunfilecheck)             Checksum: A34CD261E26CFFC198F949CD7E89208F;1236.
 
 
 LaTeX Warning: There were undefined references.
@@ -1114,20 +1159,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 395.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 775.
  ) 
 Here is how much of TeX's memory you used:
- 10299 strings out of 492649
- 148201 string characters out of 6129622
- 270946 words of memory out of 5000000
- 13891 multiletter control sequences out of 15000+600000
- 102569 words of font info for 200 fonts, out of 8000000 for 9000
+ 10755 strings out of 492649
+ 153981 string characters out of 6129622
+ 275921 words of memory out of 5000000
+ 14208 multiletter control sequences out of 15000+600000
+ 122479 words of font info for 217 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,15n,57p,1126b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
+ 44i,18n,42p,1092b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
@@ -1136,25 +1181,26 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/txfonts/rtxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txf
-onts/rtxsc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t
-xsy.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on WFIRST+LSST.pdf (5 pages, 505866 bytes).
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/txfonts/rtxsc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/tx
+fonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/
+txex.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txexa.p
+fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on WFIRST+LSST.pdf (13 pages, 559816 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 25 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 772 compressed objects within 8 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: WFIRST+LSST.aux
+The style file: mnras.bst
+Database file #1: references.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+"ArXiv e-prints" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry dba14
+while executing---line 1822 of file mnras.bst
+Warning--empty journal in dba14
+"ArXiv e-prints" is a string literal, `journal' is a missing field
+---they aren't the same literal types for entry dba14
+while executing---line 1822 of file mnras.bst
+You've used 74 entries,
+            2881 wiz_defined-function locations,
+            1306 strings with 67552 characters,
+and the built_in function-call counts, 35873 in all, are:
+= -- 3223
+> -- 2373
+< -- 108
++ -- 1050
+- -- 326
+* -- 4560
+:= -- 5304
+add.period$ -- 0
+call.type$ -- 74
+change.case$ -- 148
+chr.to.int$ -- 73
+cite$ -- 75
+duplicate$ -- 1760
+empty$ -- 1701
+format.name$ -- 590
+if$ -- 6345
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 73
+newline$ -- 235
+num.names$ -- 456
+pop$ -- 343
+preamble$ -- 1
+purify$ -- 296
+quote$ -- 0
+skip$ -- 1129
+stack$ -- 0
+substring$ -- 2445
+swap$ -- 956
+text.length$ -- 300
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 666
+warning$ -- 1
+while$ -- 508
+width$ -- 0
+write$ -- 752
+(There were 2 error messages)
