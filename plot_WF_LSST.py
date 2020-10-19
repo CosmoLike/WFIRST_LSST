@@ -53,7 +53,7 @@ analysissettings={
 ### ------------------------------------------------
 ### ------------------------------------------------
 zpivot=0.4
-samples=loadMCSamples('./like_3x2pt_WFIRST_area=2.000000e+03_dmo',settings=analysissettings0)
+samples=loadMCSamples('./LSST_3x2pt_sys_model_1',settings=analysissettings0)
 p = samples.getParams()
 samples.addDerived(1e9*p.sigma8,name='AA',label='10^9 A_\mathrm{s}',
   range=[samples.getLower('sigma8')*1e9,samples.getUpper('sigma8')*1e9])
@@ -69,7 +69,7 @@ samples.addDerived(p.w0+(zpivot/(1.+zpivot))*p.wa,name='wp',label='w_p',
   range=[samples.getLower('w0')+(zpivot/(1.+zpivot))*samples.getLower('wa'),samples.getUpper('w0')+(zpivot/(1.+zpivot))*samples.getUpper('wa')])
 samples.saveAsText('.VM_plot_all_probes_multi_v2_TMP_1')
 
-samples=loadMCSamples('./like_3x2pt_LSST_Y10_area=1.800000e+04_dmo',settings=analysissettings0)
+samples=loadMCSamples('./LSST_3x2pt_sys_model_2',settings=analysissettings0)
 p = samples.getParams()
 samples.addDerived(1e9*p.sigma8,name='AA',label='10^9 A_\mathrm{s}',
   range=[samples.getLower('sigma8')*1e9,samples.getUpper('sigma8')*1e9])
@@ -85,7 +85,7 @@ samples.addDerived(p.w0+(zpivot/(1.+zpivot))*p.wa,name='wp',label='w_p',
   range=[samples.getLower('w0')+(zpivot/(1.+zpivot))*samples.getLower('wa'),samples.getUpper('w0')+(zpivot/(1.+zpivot))*samples.getUpper('wa')])
 samples.saveAsText('.VM_plot_all_probes_multi_v2_TMP_2')
 
-samples=loadMCSamples('./like_3x2pt_WFIRST_area=1.800000e+04_dmo',settings=analysissettings0)
+samples=loadMCSamples('./LSST_3x2pt_sys_model_3',settings=analysissettings0)
 p = samples.getParams()
 samples.addDerived(1e9*p.sigma8,name='AA',label='10^9 A_\mathrm{s}',
   range=[samples.getLower('sigma8')*1e9,samples.getUpper('sigma8')*1e9])
@@ -153,9 +153,9 @@ g.plots_2d(
 g.settings.tight_layout=True
 g.finish_plot(
   legend_labels=[
-    'WFIRST HLS',
-    'LSST Y10',
-    'WFIRST wide',        
+    'model 1',
+    'model 2',
+    'model 3',        
   ],
   no_extra_legend_space=True,
   legend_loc=(0.60,0.76)

@@ -16,9 +16,6 @@
 ./like_fourier 0 	HzAGN
 ./like_fourier 1	HzAGN	
 ./like_fourier 2	HzAGN	
-./like_fourier 0 	HzAGN
-./like_fourier 1	HzAGN	
-./like_fourier 2	HzAGN
 ./like_fourier 0 	owls_AGN
 ./like_fourier 1	owls_AGN	
 ./like_fourier 2	owls_AGN		
